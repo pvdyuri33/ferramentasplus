@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Contato | Ferramentas+</title>
+  <meta name="description" content="Entre em contato com o Ferramentas+ para enviar sugestões, dúvidas ou informar problemas nas ferramentas.">
+  <meta name="robots" content="index, follow">
+
+  <link rel="canonical" href="https://SEU-DOMINIO.com/contato.html">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<header class="header">
+  <div class="container nav">
+    <a href="index.html" class="logo">+ Ferramentas</a>
+
+    <nav>
+      <a href="index.html">Início</a>
+      <button id="themeToggle" class="theme-btn">☀</button>
+    </nav>
+  </div>
+</header>
+
+<main class="container tool-page">
+
+  <div class="breadcrumb">
+    <a href="index.html">Início</a> → Contato
+  </div>
+
+  <section class="tool-page-header">
+    <span class="badge">CONTATO</span>
+
+    <h1>Entre em contato</h1>
+
+    <p>
+      Tem uma sugestão, dúvida ou encontrou algum problema?
+      Envie uma mensagem.
+    </p>
+  </section>
+
+  <section class="tool-layout">
+
+    <div class="tool-box">
+
+      <form id="contactForm">
+
+        <div class="form-group">
+          <label for="contactName">Nome</label>
+          <input
+            id="contactName"
+            type="text"
+            placeholder="Seu nome"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="contactEmail">E-mail</label>
+          <input
+            id="contactEmail"
+            type="email"
+            placeholder="seuemail@email.com"
+            required
+          >
+        </div>
+
+        <div class="form-group">
+          <label for="contactMessage">Mensagem</label>
+          <textarea
+            id="contactMessage"
+            rows="6"
+            placeholder="Digite sua mensagem..."
+            required
+          ></textarea>
+        </div>
+
+        <button type="submit" class="primary-btn">
+          Enviar mensagem
+        </button>
+
+        <div id="contactResult" class="result"></div>
+
+      </form>
+
+    </div>
+
+    <div class="tool-info">
+
+      <h2>Como podemos ajudar?</h2>
+
+      <p>
+        Você pode utilizar o contato para enviar sugestões de novas
+        ferramentas, informar erros ou compartilhar ideias para melhorar
+        o Ferramentas+.
+      </p>
+
+      <p>
+        Estamos trabalhando para tornar a plataforma cada vez mais útil,
+        rápida e fácil de utilizar.
+      </p>
+
+    </div>
+
+  </section>
+
+</main>
+
+<footer class="footer">
+  <div class="container">
+    <p>© 2026 Ferramentas+ — Ferramentas online gratuitas.</p>
+
+    <div class="footer-links">
+      <a href="sobre.html">Sobre</a>
+      <a href="privacidade.html">Privacidade</a>
+      <a href="termos.html">Termos</a>
+      <a href="contato.html">Contato</a>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+
+<script>
+  const contactForm = document.getElementById("contactForm");
+  const contactResult = document.getElementById("contactResult");
+
+  contactForm.addEventListener("submit", function(event) {
+    event.preventDefault();
+
+    contactResult.textContent =
+      "Formulário preenchido. O envio real será conectado na próxima etapa.";
+
+    contactResult.classList.add("show");
+  });
+</script>
+
+</body>
+</html>
