@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://pvdyuri33.github.io/ferramentasplus/sitemap.xml
